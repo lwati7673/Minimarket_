@@ -10,7 +10,7 @@ use App\Models\Produk;
 class DetilTransaksi extends Model
 {
     use HasFactory;
-    protected $fillable =['transaksi_id', 'produk_id','jumlah'];
+    protected $fillable =['transaksi_id','produk_id','jumlah'];
     public function transaksi(){
         return $this->belongsTo(Transaksi::class);
     }
