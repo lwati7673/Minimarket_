@@ -4,10 +4,10 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use\App\Models\Transaksi;
+use App\Models\Transaksi;
 use App\Models\Produk;
 
-class DetailTransaksi extends Model
+class DetilTransaksi extends Model
 {
     use HasFactory;
     protected $fillable =['transaksi_id', 'produk_id','jumlah'];
@@ -18,3 +18,4 @@ class DetailTransaksi extends Model
         return $this->belongsTo(Produk::class);
     }
 }
+
